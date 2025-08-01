@@ -125,13 +125,13 @@ with tab1:
                 'pemandangan':pemandangan,
                 'internet':internet,
                 'jalan':jalan,
-                'tahunbangun':tahunbangun,
-                'tahunrenov':tahunrenov,
-                'fasilitas':fasilitas,
+                'tahunbangun':tahunbangun.year,
+                'tahunrenov':tahunrenov.year,
+                'fasilitas':','.join(fasilitas) if fasilitas else 'Tidak ada',
                 'jarakkota':jarakkota
                 }
         features = pd.DataFrame(data, index=[0])
-        features = features.drop(columns=['Luastanah','Luasbangunan','Konseprumah','tahunbangun'], errors='ignore')
+        features = features.drop(columns=['Luastanah','Luasbangunan','Konseprumah','tahunbangun','fasilitas'], errors='ignore')
 
     # Predict Button
 if st.button('Predict Now!'):
