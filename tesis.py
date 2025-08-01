@@ -139,6 +139,7 @@ if st.button('Predict Now!'):
  with open('tesis.pkl','rb') as file:
         model = pickle.load(file)
         prediction = model.predict(features)
+        prediction = np.expm1(prediction)
  with st.spinner('Wait for it...'):
         time.sleep(4)
         st.success(f"Hasil prediksi: ${prediction[0]:,.2f}")
