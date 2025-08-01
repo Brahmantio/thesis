@@ -136,7 +136,7 @@ with tab1:
     # Predict Button
 if st.button('Predict Now!'):
             #model_loc = '/mount/src/course/modeldqlab.pkl'
- with open('tesis.pkl','rb') as file:
+ with open('tesis2.pkl','rb') as file:
         model = pickle.load(file)
         prediction1 = model.predict(features)
         prediction = np.expm1(prediction1)
