@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import joblib
 import time
 from PIL import Image
 
@@ -138,8 +137,7 @@ with tab1:
 if st.button('Predict Now!'):
             #model_loc = '/mount/src/course/modeldqlab.pkl'
  with open("tesis2.pkl",'rb') as file:
-        #model = pickle.load(file)
-        model = joblib.load(file)
+        model = pickle.load(file)
         prediction1 = model.predict(features)
         prediction = np.expm1(prediction1)
  with st.spinner('Wait for it...'):
