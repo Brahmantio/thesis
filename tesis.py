@@ -138,8 +138,8 @@ if st.button('Predict Now!'):
             #model_loc = '/mount/src/course/modeldqlab.pkl'
  with open('tesis.pkl','rb') as file:
         model = pickle.load(file)
-        prediction = model.predict(features)
-        prediction = np.expm1(prediction)
+        prediction1 = model.predict(features)
+        prediction = np.expm1(prediction1)
  with st.spinner('Wait for it...'):
         time.sleep(4)
         st.success(f"Hasil prediksi: ${prediction[0]:,.2f}")
