@@ -85,11 +85,8 @@ with tab1:
         materialbangunan=st.radio("material bangunan",("Batako","Bata Hebel","Bata Merah","Beton"))
         materialantai=st.radio("material lantai",("Granit","Keramik","Marmer","Ubin"))
         hadap=st.radio("Arah rumah",("Barat","Timur","Utara","Selatan"))
-        konseprumah=st.selectbox('Konsep rumah', ['Modern Minimalist', 'Modern Glass House', 'Modern',
-                                'Modern minimalist', 'Scandinavian', 'Old', 'Mordern minimalist',
-                                'Minimalist', 'American Classic', 'Classic', 'Minimlist',
-                                'Modern Minimlist', 'Minimalitst', 'Kontemporer', 'Pavilion',
-                                'Industrial'])
+        konseprumah=st.selectbox('Konsep rumah', ['Modern Glass House', 'Modern', 'Scandinavian', 'Old', 'Mordern minimalist',
+                                'Minimalist', 'American Classic', 'Classic','Kontemporer', 'Pavilion','Industrial'])
         pemandangan=st.radio("Pemandangan sekitar",("Pemukiman Warga","Perkotaan","Taman Kota"))
         internet=st.radio("Jangkauan Internet",("Tersedia","Tidak tersedia","Sedang Proses"))
         jalan=st.slider("Lebar jalan memuat berapa kendaraan",
