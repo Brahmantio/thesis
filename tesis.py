@@ -62,7 +62,7 @@ with tab1:
                         max_value=10,
                         step=1,
                         value=1)
-        sertifikat= st.radio("Jenis kepemilikan sertifikat",('Lainnya', 'SHM', 'SHGB', 'PPJB', 'SHP'))
+        sertifikat= st.radio("Jenis kepemilikan sertifikat",('SHM', 'SHGB', 'PPJB', 'SHP','Lainnya'))
         dayalistrik= st.slider("Daya listrik yang tersedia",
                         min_value=100,
                         max_value=66000,
