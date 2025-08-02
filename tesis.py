@@ -128,7 +128,7 @@ with tab1:
                 'jarakkota':jarakkota
                 }
         features = pd.DataFrame(data, index=[0])
-        features = features.drop(columns=['Luastanah','Luasbangunan','Konseprumah','tahunbangun','fasilitas'], errors='ignore')
+        #features = features.drop(columns=['Luastanah','Luasbangunan','Konseprumah','tahunbangun','fasilitas'], errors='ignore')
 
     # Predict Button
 if st.button('Predict Now!'):
