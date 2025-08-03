@@ -21,7 +21,7 @@ uploaded_file = st.sidebar.file_uploader("Upload your CSV file", type=["csv"])
 tab1, tab2 = st.tabs(["Start Prediction", "How to Use"])
 with tab1:
         st.header("Input your specific data")
-        cicilan= st.number_input("Cicilan perbulan",
+        Cicilan= st.number_input("Cicilan perbulan",
                         min_value=0,
                         step=1000000000,
                         )
@@ -103,8 +103,8 @@ with tab1:
         tahun_renovasi=st.date_input('Tahun renovasi rumah')
         fasilitas_perumahan=st.multiselect('Fasilitas yang dimiliki', ['Akses parkir','Masjid','Gereja','Taman','Keamanan','One gate system','Kolam renang','Laundry','CCTV'])
         jarak_pusat_kota=st.radio("Berapa jauh jarak dari rumah ke pusat kota",("< 5 KM","5 KM","> 5KM"))
-        data = {'cicilan':cicilan,
-                'kecamatan':kecamatan,
+        data = {'Cicilan':Cicilan,
+                'Kecamatan':Kecamatan,
                 'wilayah':wilayah,
                 'jenis_perumahan':jenis_perumahan,
                 'kamar_tidur':kamar_tidur,
