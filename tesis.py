@@ -35,7 +35,7 @@ with tab1:
         Wilayah= st.selectbox('Pilih Wilayah:', ['Surabaya Barat', 'Surabaya Timur', 'Surabaya Selatan',
                             'Surabaya Utara', 'Surabaya Pusat'])
         jenis_perumahan= st.radio("Jenis Pemukiman rumah",
-                        ("Perumahan", "Perkampungan", "Samping Jalan"))
+                        ["Perumahan", "Perkampungan", "Samping Jalan"])
         kamar_tidur= st.slider("Jumlah kamar tidur",
                         min_value=1,
                         max_value=10,
