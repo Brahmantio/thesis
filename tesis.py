@@ -88,7 +88,7 @@ with tab1:
         ruang_tamu=st.radio("Ketersediaan ruang tamu",("Tersedia","Tidak tersedia"))
         kondisi_perabotan=st.radio("Kondisi fungsional rumah",("Unfurnised","Semi furnished","furnished"))
         material_bangunan=st.radio("material bangunan",("Batako","Bata Hebel","Bata Merah","Beton"))
-        materia_lantai=st.radio("material lantai",("Granit","Keramik","Marmer","Ubin"))
+        material_lantai=st.radio("material lantai",("Granit","Keramik","Marmer","Ubin"))
         hadap=st.radio("Arah rumah",("Barat","Timur","Utara","Selatan"))
         konsep_rumah=st.selectbox('Konsep rumah', ['Modern Glass House', 'Modern', 'Scandinavian', 'Old', 'Mordern minimalist',
                                 'Minimalist', 'American Classic', 'Classic','Kontemporer', 'Pavilion','Industrial'])
