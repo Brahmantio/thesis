@@ -6,7 +6,7 @@ from PIL import Image
 
 st.set_page_config(page_title="House Price Prediction", layout="centered", initial_sidebar_state="auto", page_icon="🏠")
 st.title("""
-Welcome to my portofolio Data Analyst
+THESIS RESEARCH SIMULATION
 
 OPTIMASI FEATURE ENGINEERING TERHADAP PEFORMA ALGORITMA XGBOOST, RANDOM FOREST DAN SVR DALAM MEMPREDIKSI HARGA RUMAH
 \ndashboard was created by [Bramantio](https://www.linkedin.com/in/brahmantio-w/), here I want to try to introduce the results of my portfolio or my abilities in the field of data science. 
@@ -14,8 +14,6 @@ OPTIMASI FEATURE ENGINEERING TERHADAP PEFORMA ALGORITMA XGBOOST, RANDOM FOREST D
 """)
 img = Image.open("rumah1.JPG")
 st.image(img, width=500)
-add_selectitem = st.sidebar.header("Prediction with CSV file")
-uploaded_file = st.sidebar.file_uploader("Upload your CSV file", type=["csv"])
         
     # Membuat tab untuk aplikasi
 tab1, tab2 = st.tabs(["Start Prediction", "How to Use"])
@@ -219,10 +217,11 @@ with tab1:
         features['kualitas_infrastruktur'] = (features['sumber_air'] + features['jangkauan_internet'] + features['lebar_jalan'] + features['jarak_pusat_kota']) / 4
 
     # Predict Button
+input_df=
 if st.button('Predict Now!'):
             #model_loc = '/mount/src/course/modeldqlab.pkl'
  with open("tesis.pkl",'rb') as file:
-        st.write(input_df)
+        st.write(features)
         model = pickle.load(file)
         prediction1 = model.predict(features)
         prediction = np.expm1(prediction1)
