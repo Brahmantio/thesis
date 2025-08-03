@@ -133,7 +133,7 @@ with tab1:
                 'fasilitas_perumahan':fasilitas_perumahan,
                 'jarak_pusat_kota':jarak_pusat_kota
                 }
-        features = pd.DataFrame(data, index=[0])
+        features = pd.DataFrame([data])
         # Contoh encoding manual
         Kecamatan={'Lakasantri':0, 
                'Mulyorejo':1, 
