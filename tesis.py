@@ -79,7 +79,7 @@ with tab1:
                         step=1,
                         value=0)
         kondisi_properti= st.radio("Tingkat kondisi properti",("Baru","Bagus","Perlu perbaikan","Tidak layak"))
-        dapur = st.slider("Jumlah dapur yang tersedia",
+        Dapur = st.slider("Jumlah dapur yang tersedia",
                         min_value=1,
                         max_value=4,
                         step=1,
