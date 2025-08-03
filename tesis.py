@@ -33,7 +33,7 @@ with tab1:
                                     'Wonokromo', 'Sukomanunggal', 'Benowo', 'Semampir', 'Simokerto',
                                     'Pakal', 'Krembangan', 'Sawahan', 'Tambaksari', 'Genteng',
                                     'Asemrowo', 'Bubutan'])
-        wilayah= st.selectbox('Pilih Wilayah:', ['Surabaya Barat', 'Surabaya Timur', 'Surabaya Selatan',
+        Wilayah= st.selectbox('Pilih Wilayah:', ['Surabaya Barat', 'Surabaya Timur', 'Surabaya Selatan',
                             'Surabaya Utara', 'Surabaya Pusat'])
         jenis_perumahan= st.radio("Jenis Pemukiman rumah",
                         ("Perumahan", "Perkampungan", "Samping Jalan"))
@@ -105,7 +105,7 @@ with tab1:
         jarak_pusat_kota=st.radio("Berapa jauh jarak dari rumah ke pusat kota",("< 5 KM","5 KM","> 5KM"))
         data = {'Cicilan':Cicilan,
                 'Kecamatan':Kecamatan,
-                'wilayah':wilayah,
+                'Wilayah':Wilayah,
                 'jenis_perumahan':jenis_perumahan,
                 'kamar_tidur':kamar_tidur,
                 'kamar_mandi':kamar_mandi,
