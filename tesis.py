@@ -128,8 +128,8 @@ with tab1:
                 'jangkauan_internet':jangkauan_internet,
                 'lebar_jalan':lebar_jalan,
                 'sumber_air':'PDAM',        
-                'tahun_bangun':tahun_bangun.year,
-                'tahun_renovasi':tahun_renovasi.year,
+                'tahun_bangun':tahun_bangun,
+                'tahun_renovasi':tahun_renovasi,
                 'fasilitas_perumahan':fasilitas_perumahan,
                 'jarak_pusat_kota':jarak_pusat_kota
                 }
