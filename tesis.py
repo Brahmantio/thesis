@@ -131,7 +131,7 @@ with tab1:
                 'sumber_air':'PDAM',        
                 'tahun_bangun':tahun_bangun.year,
                 'tahun_renovasi':tahun_renovasi.year,
-                'fasilitas_perumahan':','.join(fasilitas_perumahan) if fasilitas else 'Tidak ada',
+                'fasilitas_perumahan':','.join(fasilitas_perumahan) if fasilitas_perumahan else 'Tidak ada',
                 'jarak_pusat_kota':jarak_pusat_kota
                 }
         features = pd.DataFrame(data, index=[0])
