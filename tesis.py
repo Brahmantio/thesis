@@ -103,7 +103,7 @@ with tab1:
         tahun_renovasi=st.date_input('Tahun renovasi rumah')
         fasilitas_perumahan=st.multiselect('Fasilitas yang dimiliki', ['Akses parkir','Masjid','Gereja','Taman','Keamanan','One gate system','Kolam renang','Laundry','CCTV'])
         jarak_pusat_kota=st.radio("Berapa jauh jarak dari rumah ke pusat kota",("< 5 KM","5 KM","> 5KM"))
-        data = {cicilan':cicilan,
+        data = {'cicilan':cicilan,
                 'kecamatan':kecamatan,
                 'wilayah':wilayah,
                 'jenis_perumahan':jenis_perumahan,
