@@ -25,7 +25,7 @@ with tab1:
                         min_value=0,
                         step=1000000000,
                         )
-        kecamatan = st.selectbox('Kecamatan rumah anda:', 
+        Kecamatan = st.selectbox('Kecamatan rumah anda:', 
                                    ['Lakasantri', 'Mulyorejo', 'Kertajaya', 'Rungkut', 'Karang Pilang',
                                     'Wiyung', 'Sukolilo', 'Kenjeran', 'Tandes', 'Tegalsari',
                                     'Tenggilis Mejoyo', 'Gayungan', 'Dukuh Pakis', 'Sambikerep',
