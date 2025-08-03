@@ -180,8 +180,8 @@ with tab1:
         konsep_rumah = {'Minimalist': 0, 'Kontemporer': 1, 'American Classic': 2,'Modern Glass House':3,'Mordern minimalist':4,'Scandinavian':5,'Pavilion':6,'Industrial':7}
         pemandangan = {'Pemukiman Warga': 0, 'Perkotaan': 1,'Taman Kota':2}
         jangkauan_internet = {'Tersedia': 0, 'Tidak tersedia': 1, 'Sedang proses':2}
-        sumber_air = {'PDAM': 0, 'Air sumur':1, 'PLN': 2}
-        jarak_pusat_kota = {'< 5 KM': 0, '5KM': 1, '> 5KM': 2}
+        sumber_air = {'PDAM': 0, 'Air sumur':1, 'PAM': 2}
+        jarak_pusat_kota = {'< 5 KM': 0, '5 KM': 1, '> 5KM': 2}
 
         features['Kecamatan'] = features['Kecamatan'].map(Kecamatan)
         features['Wilayah'] = features['Wilayah'].map(Wilayah)
