@@ -14,7 +14,8 @@ OPTIMASI FEATURE ENGINEERING TERHADAP PEFORMA ALGORITMA XGBOOST, RANDOM FOREST D
 """)
 img = Image.open("rumah1.JPG")
 st.image(img, width=500)
-        
+add_selectitem = st.sidebar.header("Prediction with CSV file")
+uploaded_file = st.sidebar.file_uploader("Upload your CSV file", type=["csv"])
     # Membuat tab untuk aplikasi
 tab1, tab2 = st.tabs(["Start Prediction", "How to Use"])
 with tab1:
