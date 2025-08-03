@@ -227,7 +227,7 @@ if st.button('Predict Now!'):
  with st.spinner('Wait for it...'):
         time.sleep(4)
         st.success(f"Hasil prediksi: Rp{prediction[0]:,.2f}")
-        
+     
 with tab2:
         st.header("How to use this application")
         st.write("1. Apabila ingin  memprediksi menggunakan file, pastikan file tersebut dalam format .csv dan seluruh atribut sama")
