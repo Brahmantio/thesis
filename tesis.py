@@ -61,7 +61,7 @@ with tab1:
                         max_value=10,
                         step=1,
                         value=1)
-        sertifikat= st.radio("Jenis kepemilikan sertifikat",('SHM', 'SHGB','SHP','SHSRS','PPJB', 'Lainnya'))
+        sertifikat= st.radio("Jenis kepemilikan sertifikat",['SHM', 'SHGB','SHP','SHSRS','PPJB', 'Lainnya'])
         daya_listrik= st.slider("Daya listrik yang tersedia",
                         min_value=100,
                         max_value=66000,
@@ -77,22 +77,22 @@ with tab1:
                         max_value=10,
                         step=1,
                         value=0)
-        kondisi_properti= st.radio("Tingkat kondisi properti",("Baru","Bagus","Perlu perbaikan","Tidak layak"))
+        kondisi_properti= st.radio("Tingkat kondisi properti",["Baru","Bagus","Perlu perbaikan","Tidak layak"])
         Dapur = st.slider("Jumlah dapur yang tersedia",
                         min_value=1,
                         max_value=4,
                         step=1,
                         value=1)
-        ruang_makan=st.radio("Ketersediaan ruang makan",("Tersedia","Tidak tersedia"))
-        ruang_tamu=st.radio("Ketersediaan ruang tamu",("Tersedia","Tidak tersedia"))
-        kondisi_perabotan=st.radio("Kondisi fungsional rumah",("Unfurnised","Semi furnished","furnished"))
-        material_bangunan=st.radio("material bangunan",("Batako","Bata Hebel","Bata Merah","Beton"))
-        material_lantai=st.radio("material lantai",("Granit","Keramik","Marmer","Ubin"))
-        hadap=st.radio("Arah rumah",("Barat","Timur","Utara","Selatan"))
+        ruang_makan=st.radio("Ketersediaan ruang makan",["Tersedia","Tidak tersedia"])
+        ruang_tamu=st.radio("Ketersediaan ruang tamu",["Tersedia","Tidak tersedia"])
+        kondisi_perabotan=st.radio("Kondisi fungsional rumah",["Unfurnised","Semi furnished","furnished"])
+        material_bangunan=st.radio("material bangunan",["Batako","Bata Hebel","Bata Merah","Beton"])
+        material_lantai=st.radio("material lantai",["Granit","Keramik","Marmer","Ubin"])
+        hadap=st.radio("Arah rumah",["Barat","Timur","Utara","Selatan"])
         konsep_rumah=st.selectbox('Konsep rumah', ['Modern Glass House', 'Modern', 'Scandinavian', 'Old', 'Mordern minimalist',
                                 'Minimalist', 'American Classic', 'Classic','Kontemporer', 'Pavilion','Industrial'])
-        pemandangan=st.radio("Pemandangan sekitar",("Pemukiman Warga","Perkotaan","Taman Kota"))
-        jangkauan_internet=st.radio("Jangkauan Internet",("Tersedia","Tidak tersedia","Sedang Proses"))
+        pemandangan=st.radio("Pemandangan sekitar",["Pemukiman Warga","Perkotaan","Taman Kota"])
+        jangkauan_internet=st.radio("Jangkauan Internet",["Tersedia","Tidak tersedia","Sedang Proses"])
         lebar_jalan=st.slider("Lebar jalan memuat berapa kendaraan",
                         min_value=1,
                         max_value=4,
@@ -101,7 +101,7 @@ with tab1:
         tahun_bangun=st.date_input('Tahun rumah dibangun')
         tahun_renovasi=st.date_input('Tahun renovasi rumah')
         fasilitas_perumahan=st.multiselect('Fasilitas yang dimiliki', ['Akses parkir','Masjid','Gereja','Taman','Keamanan','One gate system','Kolam renang','Laundry','CCTV'])
-        jarak_pusat_kota=st.radio("Berapa jauh jarak dari rumah ke pusat kota",("< 5 KM","5 KM","> 5KM"))
+        jarak_pusat_kota=st.radio("Berapa jauh jarak dari rumah ke pusat kota",["< 5 KM","5 KM","> 5KM"])
         data = {'Cicilan':Cicilan,
                 'Kecamatan':Kecamatan,
                 'Wilayah':Wilayah,
