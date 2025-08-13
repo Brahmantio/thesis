@@ -217,7 +217,7 @@ with tab1:
         features['kualitas_infrastruktur'] = (features['sumber_air'] + features['jangkauan_internet'] + features['lebar_jalan'] + features['jarak_pusat_kota']) / 4
 
         # Predict Button
-    if st.button('Predict Now!'):
+if st.button('Predict Now!'):
             #model_loc = '/mount/src/course/modeldqlab.pkl'
              with open("tesis.pkl","rb") as file:
                 st.write(features)
