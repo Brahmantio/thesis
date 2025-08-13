@@ -217,16 +217,16 @@ with tab1:
         features['kualitas_infrastruktur'] = (features['sumber_air'] + features['jangkauan_internet'] + features['lebar_jalan'] + features['jarak_pusat_kota']) / 4
 
     # Predict Button
-if st.button('Predict Now!'):
+    if st.button('Predict Now!'):
             #model_loc = '/mount/src/course/modeldqlab.pkl'
- with open('tesis.pkl','rb') as file:
-        st.write(features)
-        model = pickle.load(file)
-        prediction1 = model.predict(features)
-        prediction = np.expm1(prediction1)
- with st.spinner('Wait for it...'):
-        time.sleep(4)
-        st.success(f"Hasil prediksi: Rp{prediction[0]:,.2f}")
+         with open('tesis.pkl','rb') as file:
+            st.write(features)
+            model = pickle.load(file)
+            prediction1 = model.predict(features)
+            prediction = np.expm1(prediction1)
+         with st.spinner('Wait for it...'):
+            time.sleep(4)
+            st.success(f"Hasil prediksi: Rp{prediction[0]:,.2f}")
      
 with tab2:
         st.header("How to use this application")
