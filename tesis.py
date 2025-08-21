@@ -176,7 +176,7 @@ with tab1:
         material_bangunan = {'Batako':0, 'Bata Hebel': 1, 'Bata Merah': 2,'Beton': 3}
         material_lantai = {'Granit': 0,'Keramik': 1, 'Marmer': 2, 'Ubin':3}
         hadap = {'Barat': 0, 'Timur': 1, 'Utara': 2, 'Selatan':3}
-        konsep_rumah = {'Minimalist': 0, 'Kontemporer': 1, 'American Classic': 2,'Modern Glass House':3,'Mordern minimalist':4,'Scandinavian':5,'Pavilion':6,'Industrial':7}
+        konsep_rumah = {'Minimalist': 0, 'Kontemporer': 1, 'American Classic': 2,'Modern Glass House':3,'Mordern minimalist':4,'Scandinavian':5,'Pavilion':6,'Industrial':7,'Modern':8}
         pemandangan = {'Pemukiman Warga': 0, 'Perkotaan': 1,'Taman Kota':2}
         jangkauan_internet = {'Tersedia': 0, 'Tidak tersedia': 1, 'Sedang proses':2}
         sumber_air = {'PDAM': 0, 'Air sumur':1, 'PAM': 2}
